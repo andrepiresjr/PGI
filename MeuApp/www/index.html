@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Hunt</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+
+            <div>
+                <h1>🎨 Color Hunt</h1>
+
+                <p>
+                    Encontre o quadrado com a cor diferente.
+                </p>
+            </div>
+
+            <div class="status">
+
+                <div class="status-box">
+                    <strong id="score">0</strong>
+                    <span>PONTOS</span>
+                </div>
+
+                <div class="status-box">
+                    <strong id="round">1/10</strong>
+                    <span>FASE</span>
+                </div>
+
+                <div class="status-box">
+                    <strong id="lives">❤️❤️❤️</strong>
+                    <span>VIDAS</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- TELA INICIAL -->
+
+        <section id="startScreen" class="screen">
+
+            <div class="icon">👁️</div>
+
+            <h2>Teste sua percepção!</h2>
+
+            <p>
+                Encontre entre os 9 quadrados aquele que possui
+                uma cor diferente.
+            </p>
+
+            <button id="startButton" class="button">
+                Jogar
+            </button>
+
+        </section>
+
+
+        <!-- JOGO -->
+
+        <section
+            id="gameScreen"
+            class="game-screen"
+            style="display: none;"
+        >
+
+            <p class="instruction">
+                Qual quadrado tem a cor diferente?
+            </p>
+
+            <div id="grid" class="grid">
+            </div>
+
+            <p id="feedback" class="feedback">
+            </p>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <section
+            id="endScreen"
+            class="screen"
+            style="display: none;"
+        >
+
+            <div id="endIcon" class="icon">
+                🏆
+            </div>
+
+            <h2 id="endTitle">
+                Você venceu!
+            </h2>
+
+            <p id="endText">
+            </p>
+
+            <button id="restartButton" class="button">
+                Jogar novamente
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
